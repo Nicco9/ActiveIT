@@ -20,14 +20,14 @@ then
 	read usuario
 	echo "Ingrese el Contenido del Commit"
 	read commit 
-	echo "Ingrese el Nombre del Repositorio en GitHub"
-	read repo
-	#Comiendo de Comendos
-	echo "# $scripting" >> README.md
+	echo "indique archivo a subir"
+	read archivo
+	#Comienzo de Comandos
+	echo "# $scripting" >> $archivo 
 	git init
 	git add . 
 	git commit -m "$commit"
-	git remote add origin https://github.com/$usuario/$repo.git
+	git remote add origin https://github.com/$usuario/$scripting.git
 	git push -u origin master 
 fi
 
