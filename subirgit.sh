@@ -30,4 +30,3 @@ then
 	git remote add origin https://github.com/$usuario/$scripting.git
 	git push -u origin master 
 fi
-
