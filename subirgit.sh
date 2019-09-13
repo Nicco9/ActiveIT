@@ -12,7 +12,7 @@ echo "3) Salir"
 echo ""
 echo "Ingresar Opción"
 read opcion
-if [ $opcion=1 ];
+if [ $opcion = 1 ];
 then
 	echo "Ingrese Texto  de Repositorio (README)"
 	read scripting 
@@ -30,7 +30,8 @@ then
 	git remote add origin https://github.com/$usuario/$scripting.git
 	git push -u origin master 
 fi
-if	[ $opcion = 2 ]; 
+
+if [ $opcion = 2 ]; 
 then 
 	ls 
 	echo "Ingrese Contenido del Commit"
@@ -42,7 +43,8 @@ then
 	git commit -m " $commit"
 	git push -u origin master 
 fi
-if 	[ $opcion = 3 ];
+
+if [ $opcion = 3 ];
 then	
 	echo "Adios"
 	break
