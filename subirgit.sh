@@ -30,3 +30,20 @@ then
 	git remote add origin https://github.com/$usuario/$scripting.git
 	git push -u origin master 
 fi
+if	[ $opcion = 2 ]; 
+then 
+	ls 
+	echo "Ingrese Contenido del Commit"
+	read commit
+	echo "Ingrese el Nombre del Archivo a Subir"
+	read archivo
+	#Ejecutar Comandos
+	git add $archivo
+	git commit -m " $commit"
+	git push -u origin master 
+fi
+if 	[ $opcion = 3 ];
+then	
+	echo "Adios"
+	break
+fi
